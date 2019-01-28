@@ -7,6 +7,14 @@ file:
     exists: true
     filetype: file
     contains: []
+  /var/log/php7/error.log:
+    exists: true
+    mode: "0777"
+    size: 113
+    owner: nobody
+    group: nobody
+    filetype: file
+    contains: []
 package:
   php7:
     installed: true

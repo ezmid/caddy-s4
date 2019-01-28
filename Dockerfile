@@ -1,5 +1,5 @@
 # The missing version contraint creeps me out
-FROM abiosoft/caddy:php-no-stats
+FROM abiosoft/caddy:0.11.2-php-no-stats
 
 LABEL maintainer="Filip Cieker <filip.cieker@ezmid.com>, Filip Cieker <filip.cieker@gmail.com>"
 
@@ -17,3 +17,8 @@ COPY ./docker /
 WORKDIR /app
 RUN composer install --optimize-autoloader --prefer-dist
 
+# Clean up
+RUN mkdir -p /var/log/php7 && \
+    touch /var/log/php7/error.log && \
+    chown -R nobody:nobody /var/log/php7 && \
+    chmod 0777 -R /var/log/php7
