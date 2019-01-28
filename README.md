@@ -2,8 +2,7 @@
 
 # Caddy Symfony 4
 
-This repo contains a freh Symfony 4 Flex installation with the bare minumum. You
-can use it for classic PHP monolithical application development.
+This repo contains a fresh Symfony 4 Flex installation with the bare minumum runtime requirements served by Caddy. You can use it for classic PHP monolithical application development.
 
 You can also use it for micro projects and APIs, although we recommend you try
 our ezmid/rr-symfony image for those use cases. It contains the Road Runner
@@ -17,34 +16,26 @@ application server optimized for PSR-7 request/response communication.
 - [Goss](https://github.com/aelsabbahy/goss) >= 0.3 [optional]
 - [Make](https://www.gnu.org/software/make/) >= 4.2 [optional]
 
+**Currently Goss is not available for Windows. Build everything else works on all platforms.*
 
 
 ## Installation
+
+.. todo
 
 
 
 ## Testing
 
+.. todo
 
 
 ## Contributing
 
-# Vintage Roadrunner
+.. todo
 
 
-This is a simple docker image with an Roadrunner server build on top of Alpine Linux for development purposes.
-
-## Installation
-
-**Requirements**
-- [GIT](https://git-scm.com/) >= 2.15
-- [Docker CE](https://www.docker.com/) >= 17.12.0
-- [Goss](https://github.com/aelsabbahy/goss) >= 0.3
-- [Make](https://www.gnu.org/software/make/) >= 4.2
-
-**Currently Goss is not available for Windows. Build everything else works on all platforms.*
-
-## Development
+## Basic howto
 ```sh
 # Build the image, TAG=latest is the default value
 $ make build
