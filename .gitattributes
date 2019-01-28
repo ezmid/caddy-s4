@@ -1,0 +1,52 @@
+# Default is auto detect
+* text=auto
+
+# Ensure all to be LF
+*.php       eol=lf
+*.js        eol=lf
+*.html      eol=lf
+*.html.twig eol=lf
+*.xml       eol=lf
+*.css       eol=lf
+*.scss      eol=lf
+*.yaml      eol=lf
+*.yml       eol=lf
+*.json      eol=lf
+*.lock      eol=lf
+*.dist      eol=lf
+*.yaml.dist eol=lf
+*.env       eol=lf
+*.md        eol=lf
+*.log       eol=lf
+*.conf      eol=lf
+*.sh        eol=lf
+*.ini       eol=lf
+Makefile    eol=lf
+README.md   eol=lf
+Dockerfile  eol=lf
+
+# Ignore during artifact creation
+tests export-ignore
+.gitignore                  export-ignore
+.gitattributes              export-ignore
+.env                        export-ignore
+.env.dist                   export-ignore
+assets                      export-ignore
+codeception.yml             export-ignore
+composer.json               export-ignore
+composer.lock               export-ignore
+docker 						export-ignore
+docker-compose.yaml         export-ignore
+docker-compose.yaml.dist    export-ignore
+Makefile                    export-ignore
+node_modules                export-ignore
+package.json                export-ignore
+phpunit.xml                 export-ignore
+phpunit.xml.dist            export-ignore
+README.md                   export-ignore
+supervisord.log             export-ignore
+supervisord.pid             export-ignore
+symfony.lock				export-ignore
+yarn-error.log              export-ignore
+yarn.lock                   export-ignore
+webpack.config.js           export-ignore

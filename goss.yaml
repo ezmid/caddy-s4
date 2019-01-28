@@ -1,0 +1,28 @@
+file:
+  /etc/Caddyfile:
+    exists: true
+    filetype: file
+    contains: []
+  /usr/bin/caddy:
+    exists: true
+    filetype: file
+    contains: []
+package:
+  php7:
+    installed: true
+  php7-fpm:
+    installed: true
+port:
+  tcp:9000:
+    listening: true
+    ip:
+    - 127.0.0.1
+  tcp6:2015:
+    listening: true
+    ip:
+    - '::'
+process:
+  caddy:
+    running: true
+  php-fpm7:
+    running: true

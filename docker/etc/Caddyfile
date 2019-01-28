@@ -1,0 +1,11 @@
+0.0.0.0
+tls off
+root /app/public
+fastcgi / 127.0.0.1:9000 php # php variant only
+rewrite {
+    r .*
+    to {path} {path}/ /index.php
+}
+log stdout
+errors stderr
+on startup php-fpm7 # php variant only

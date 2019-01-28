@@ -1,0 +1,43 @@
+###> project specific ###
+.env
+.idea
+.phpintel
+.vscode
+*.rdb
+oracle.sqlite
+docker-compose.yaml
+phpunit.xml
+/bin/.phpunit
+/public/bundles/
+/var/
+/vendor/
+*.yml~
+yarn-error.log
+.composer-cache
+.yarn-cache
+*.txt
+*.log
+tests/_output
+tests/_build
+###< project ###
+
+###> symfony/framework-bundle ###
+.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/webpack-encore-pack ###
+/node_modules/
+/public/build/
+###< symfony/webpack-encore-pack ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+###< phpunit/phpunit ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
