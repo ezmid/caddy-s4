@@ -15,5 +15,5 @@ COPY ./docker /
 
 # Switch workspace context and install Composer deps
 WORKDIR /app
-RUN composer install
+RUN composer install --optimize-autoloader --prefer-dist
 
