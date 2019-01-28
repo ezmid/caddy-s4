@@ -1,0 +1,23 @@
+# Quick way around
+language: c
+
+# Install make and curl
+addons:
+  apt:
+    packages:
+    - cmake
+    - curl
+
+# Install Goos for the image build validation step
+install:
+- "sudo curl -L https://github.com/aelsabbahy/goss/releases/download/v0.3.6/goss-linux-amd64 -o /usr/local/bin/goss"
+- "sudo chmod +rx /usr/local/bin/goss"
+- "sudo curl -L https://raw.githubusercontent.com/aelsabbahy/goss/v0.3.6/extras/dgoss/dgoss -o /usr/local/bin/dgoss"
+- "sudo chmod +rx /usr/local/bin/dgoss"
+
+# Simple 2 step process:
+# 1. Build the image
+# 2. Run the image and test it using Goos
+script:
+- make build
+- make test
