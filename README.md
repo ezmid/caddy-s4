@@ -1,6 +1,9 @@
-[![Build Status](https://travis-ci.org/ezmid/caddy-s4.svg?branch=master)](https://travis-ci.org/ezmid/caddy-s4) ![Docker Hub Status](https://img.shields.io/docker/build/ezmid/caddy-s4.svg) ![Image Pulls](https://img.shields.io/docker/pulls/ezmid/caddy-s4.svg) ![Image Stars](https://img.shields.io/docker/stars/ezmid/caddy-s4.svg)
-
 # Caddy Symfony 4
+
+[![Build Status](https://travis-ci.org/ezmid/caddy-s4.svg?branch=master)](https://travis-ci.org/ezmid/caddy-s4)
+![Docker Hub Status](https://img.shields.io/docker/build/ezmid/caddy-s4.svg)
+![Image Pulls](https://img.shields.io/docker/pulls/ezmid/caddy-s4.svg)
+![Image Stars](https://img.shields.io/docker/stars/ezmid/caddy-s4.svg)
 
 This repo contains a fresh Symfony 4 Flex installation with the bare minumum runtime requirements served by Caddy. You can use it for classic PHP monolithical application development.
 
@@ -19,35 +22,43 @@ application server optimized for PSR-7 request/response communication.
 **Currently Goss is not available for Windows. Build everything else works on all platforms.*
 
 
-## Installation
+## Tags and branches
 
-.. todo
+This simple branching model is used to build specific tags.
 
+tag 1.0.2 -> ezmid/caddy-s4:1.0.2
 
+tag 1.0.1 -> ezmid/caddy-s4:1.0.1
 
-## Testing
+branch master -> ezmid/caddy-s4:latest
 
-.. todo
+branch develop -> ezmid/caddy-s4:edge
 
 
 ## Contributing
 
-.. todo
+Just create a PR or contact me via email.
 
 
 ## Basic howto
 ```sh
 # Build the image, TAG=latest is the default value
 $ make build
+
 # Build the image with a specific tag
 $ make build TAG=1.1.0
+
 # Test the latest image
 $ make test
+
 # Test a specific tag
 $ make test TAG=1.1.0
+
 # Push the latest tag to the registry
 $ make push
+
 # Push a specific tag
 $ make push TAG=1.1.0
+
 ```
 

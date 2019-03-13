@@ -8,6 +8,7 @@ RUN apk --no-cache --update upgrade && \
 	apk add \
 	make \
 	bash \
+    php7-opcache \
 	php7-simplexml
 
 # 1:1 Copy
