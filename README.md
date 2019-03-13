@@ -1,9 +1,10 @@
 # Caddy Symfony 4
 
 [![Build Status](https://travis-ci.org/ezmid/caddy-s4.svg?branch=master)](https://travis-ci.org/ezmid/caddy-s4)
-![Docker Hub Status](https://img.shields.io/docker/build/ezmid/caddy-s4.svg)
+![Docker Hub Status](https://img.shields.io/docker/cloud/build/ezmid/caddy-s4.svg)
 ![Image Pulls](https://img.shields.io/docker/pulls/ezmid/caddy-s4.svg)
 ![Image Stars](https://img.shields.io/docker/stars/ezmid/caddy-s4.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 This repo contains a fresh Symfony 4 Flex installation with the bare minumum runtime requirements served by Caddy. You can use it for classic PHP monolithical application development.
 
