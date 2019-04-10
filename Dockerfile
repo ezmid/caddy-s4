@@ -1,5 +1,5 @@
 # The missing version contraint creeps me out
-FROM abiosoft/caddy:0.11.2-php-no-stats
+FROM abiosoft/caddy:0.11.5-php-no-stats
 
 LABEL maintainer="Filip Cieker <filip.cieker@ezmid.com>, Filip Cieker <filip.cieker@gmail.com>"
 
