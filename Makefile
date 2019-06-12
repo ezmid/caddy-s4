@@ -38,7 +38,7 @@ FULL_IMAGE_NAME=$(NAMESPACE)/${IMAGE}
 # Manual
 .ONESHELL: default
 .PHONY: default
-default: 
+default:
 	@$(ECHO) -e "\n$(FORMAT_BOLD)VINTAGE MAKE TOOL$(FORMAT_RESET)\n" \
 	"\n" \
 	"$(FORMAT_YELLOW)Variables:$(FORMAT_RESET)\n" \
@@ -61,7 +61,7 @@ default:
 .PHONY: build
 .ONESHELL: build
 build:
-	docker build . -t $(FULL_IMAGE_NAME):$(TAG)
+	docker build . -t $(FULL_IMAGE_NAME):$(TAG) --no-cache
 
 ################################################################################
 # Push the image to registry
